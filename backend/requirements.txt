@@ -1,2 +1,4 @@
 google-adk
 flask
+twilio
+python-dotenv
