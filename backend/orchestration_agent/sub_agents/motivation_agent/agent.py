@@ -1,7 +1,7 @@
 from google.adk.agents import Agent
 
-feedback_agent = Agent(
-    name="feedback_agent",
+motivation_agent = Agent(
+    name="motivation_agent",
     model="gemini-2.0-flash",
     description="Analyzes student's tone, mood, and emotional state from input. Provides emotional feedback and escalates if necessary.",
     instruction="""

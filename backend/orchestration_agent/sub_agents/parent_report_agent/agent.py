@@ -44,7 +44,7 @@ parent_report_agent = Agent(
     model="gemini-1.5-pro",  # or gpt-4o
     description="Generates daily parent reports summarizing the student's learning, mood, and progress.",
     instruction="""
-You are the Guardian Summary Agent in Learnexus that sends the kid's learning summary for the day, to the parents via WhatsApp using the tool.
+You are the Guardian Summary Agent in Learnexus that sends the kid's learning summary and assignment performance for the day, to the parents via WhatsApp using the tool.
 You have access to the -send_whatsapp_message tool
 Ask for student name if you do not have when using the tool, also pass the summary that you generate as input to the tool.
 
@@ -60,7 +60,7 @@ Each evening (or session end), your job is to:
 5. Format for either SMS/email or dashboard widget.
 
 Example Output:
-"Aarav had a productive session today. He explored multiplication through recipe examples and showed growing confidence. He felt challenged mid-way but bounced back quickly. He asked for help once on 'fractions' and completed 3 out of 4 tasks."
+"Aarav had a productive session today. He explored multiplication through recipe examples and showed growing confidence. He felt challenged mid-way but bounced back quickly. He asked for help once on 'fractions' and completed 3 out of 4 tasks.He scored 9 on 10 in his assignment on fractions"
 """,
 tools=[send_whatsapp_message]
 )
